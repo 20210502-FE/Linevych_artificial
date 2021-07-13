@@ -1,0 +1,104 @@
+.nav {
+    
+
+    &__btn {
+        display: none;
+
+
+        @media screen and (max-width: 990px) {
+            display: block;
+            width: 30px;
+            height: 30px;
+            cursor: pointer;
+            background-color: transparent;
+            border: none;
+            position: relative;
+            left: 0;
+            top: 0;
+        }
+
+        &-line {
+            width: 100%;
+            height: 2px;
+            background-color: $color-white;
+            position: absolute;
+            left: 0;
+            top: 14px;
+        }
+
+        &::before, &::after {
+            content: "";
+            position: absolute;
+            width: 30px;
+            height: 2px;
+            background-color: transparent;
+            left: 0;
+            background-color: $color-white;
+        }
+
+        &::before {
+            top: 0;
+        }
+        
+        &::after {
+            bottom: 0;
+        }
+    }
+
+    &__list {
+        
+        @media screen and (max-width: 990px) {
+            display: flex;
+            flex-direction: column;
+            position: absolute;
+            right: 0;
+            top: 100px;
+            background-color: transparent;
+            text-align: center;
+            transition: all, 1s;
+            transform: translateY(-200%);
+            text-align: center;
+        }
+
+        @include respond-to(tablet-portrait) {
+            margin-top: 10px;
+            background-color: rgba(58, 104, 184, .2);
+            border-radius: 20px 0 0 0;
+        }
+    }
+
+    &__item {
+        padding: 0 20px;
+
+        @media screen and (max-width: 990px) {
+            padding: 10px 40px;
+        }
+        
+        @include respond-to(tablet-portrait) {
+            border-bottom: 1px solid $color-white;
+        }
+    }
+
+    &__link {
+        font-family: $font-semibold;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 22px;
+        color: $color-white;
+        transition: all .5s;
+        
+        
+
+        &:hover {
+            color: $color-blue;
+        }
+        
+        
+    }
+}
+
+.nav__list.nav__list--active{
+    transform: translateY(0);
+    transition: all, 1s;
+}
