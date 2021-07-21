@@ -64,13 +64,6 @@ body {
     max-width: 44px;
     }
 
-    &__wrapper {
-
-        &-footer {
-            margin-bottom: 10px;
-        }
-    }
-
     &__link {
 
         @include respond-to(tablet-portrait) {

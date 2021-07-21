@@ -14,18 +14,16 @@
 <body>
     <header class="header">
         <div class="header__inner container flex flex_space-between">
-            <div class="header__content flex">
-                <div class="logo logo__wrapper logo__wrapper-header">
-                    <a class="logo__link flex flex_align-center" href="/"><img class="logo__img header__logo"
-                            src="assets/images/logo.png" alt="logo">
-                        <div class="logo__text">
-                            Artificial Intelligence
-                        </div>
-                    </a>
-                </div>
+            <div class="logo logo__wrapper logo__wrapper-header flex">
+                <a class="logo__link flex flex_align-center" href="/">
+                    <img class="logo__img header__logo" src="assets/images/logo.png" alt="logo">
+                    <div class="logo__text">
+                        Artificial Intelligence
+                    </div>
+                </a>
             </div>
             <div class="nav flex flex_align-center">
-                <nav class=" header__nav flex">
+                <nav class="header__nav">
                     <button class="nav__btn">
                         <span class="nav__btn-line"></span>
                     </button>
@@ -77,10 +75,18 @@
                     </div>
                 </div>
                 <div class="banner__logo flex flex_space-between flex_wrap">
-                    <img class="banner__logo-img banner__logo-first" src="assets/images/banner-logo-1.png" alt="">
-                    <img class="banner__logo-img banner__logo-second" src="assets/images/banner-logo-2.png" alt="">
-                    <img class="banner__logo-img banner__logo-third" src="assets/images/banner-logo-3.png" alt="">
-                    <img class="banner__logo-img banner__logo-fourth" src="assets/images/banner-logo-4.png" alt="">
+                    <div class="banner__logo-wrapper">
+                        <img class="banner__logo-img banner__logo-first" src="assets/images/banner-logo-1.png" alt="">
+                    </div>
+                    <div class="banner__logo-wrapper">
+                        <img class="banner__logo-img banner__logo-second" src="assets/images/banner-logo-2.png" alt="">
+                    </div>
+                    <div class="banner__logo-wrapper">
+                        <img class="banner__logo-img banner__logo-third" src="assets/images/banner-logo-3.png" alt="">
+                    </div>
+                    <div class="banner__logo-wrapper">
+                        <img class="banner__logo-img banner__logo-fourth" src="assets/images/banner-logo-4.png" alt="">
+                    </div>
                 </div>
             </div>
         </section>
@@ -368,7 +374,7 @@
         <div class="container">
             <div class="footer__inner flex flex_space-between flex_wrap">
                 <div class="footer__contact">
-                    <div class="logo logo__wrapper-footer">
+                    <div class="logo footer__logo-wrapper">
                         <a class="logo__link flex flex_column" href="/"><img class="logo__img footer__logo"
                                 src="assets/images/logo.png" alt="logo">
                             <div class="logo__text logo__text_footer">
@@ -378,23 +384,23 @@
                     </div>
                     <div class="footer__text">Lorem ipsum is placeholder text commonly used in the graphic, print, and
                         layouts and visual mockups.</div>
-                    <a class="footer__contact-link footer__contact-mail"
+                    <a class="footer__contact-link footer__contact_mail"
                         href="mailto:Company@gmail.com">Company@gmail.com.com</a>
-                    <a class="footer__contact-link footer__contact-tel" href="tel:0643321233">Phone: (064) 332-1233</a>
-                    <a class="footer__contact-link footer__contact-location" href="#">450 Wall Street, USA, New York</a>
+                    <a class="footer__contact-link footer__contact_tel" href="tel:0643321233">Phone: (064) 332-1233</a>
+                    <a class="footer__contact-link footer__contact_location" href="#">450 Wall Street, USA, New York</a>
                 </div>
                 <div class="footer__information">
-                    <h4 class="footer__title uppercase footer__information-nav">
+                    <h4 class="footer__title uppercase">
                         INFORMATION
                     </h4>
                     <nav>
                         <ul class="footer__list footer__list-information">
-                            <li class="footer__item"><a class="footer__item-link" href="#">New Collection</a></li>
-                            <li class="footer__item"><a class="footer__item-link" href="#">About Store</a></li>
-                            <li class="footer__item"><a class="footer__item-link" href="#">Contact Us</a></li>
-                            <li class="footer__item"><a class="footer__item-link" href="#">Latest News</a></li>
-                            <li class="footer__item"><a class="footer__item-link" href="#">Our Sitemap</a></li>
-                            <li class="footer__item"><a class="footer__item-link" href="#">Orders History</a></li>
+                            <li class="footer__list-item"><a class="footer__list-link" href="#">New Collection</a></li>
+                            <li class="footer__list-item"><a class="footer__list-link" href="#">About Store</a></li>
+                            <li class="footer__list-item"><a class="footer__list-link" href="#">Contact Us</a></li>
+                            <li class="footer__list-item"><a class="footer__list-link" href="#">Latest News</a></li>
+                            <li class="footer__list-item"><a class="footer__list-link" href="#">Our Sitemap</a></li>
+                            <li class="footer__list-item"><a class="footer__list-link" href="#">Orders History</a></li>
                         </ul>
                     </nav>
                 </div>
@@ -404,12 +410,14 @@
                     </h4>
                     <nav>
                         <ul class="footer__list">
-                            <li class="footer__item"><a class="footer__item-link" href="#">Instagram profile</a></li>
-                            <li class="footer__item"><a class="footer__item-link" href="#">New Collection</a></li>
-                            <li class="footer__item"><a class="footer__item-link" href="#">Contact Us</a></li>
-                            <li class="footer__item"><a class="footer__item-link" href="#">Latest News</a></li>
-                            <li class="footer__item"><a class="footer__item-link" href="#">Terms & Conditions</a></li>
-                            <li class="footer__item"><a class="footer__item-link" href="#">Purchase Theme</a></li>
+                            <li class="footer__list-item"><a class="footer__list-link" href="#">Instagram profile</a>
+                            </li>
+                            <li class="footer__list-item"><a class="footer__list-link" href="#">New Collection</a></li>
+                            <li class="footer__list-item"><a class="footer__list-link" href="#">Contact Us</a></li>
+                            <li class="footer__list-item"><a class="footer__list-link" href="#">Latest News</a></li>
+                            <li class="footer__list-item"><a class="footer__list-link" href="#">Terms & Conditions</a>
+                            </li>
+                            <li class="footer__list-item"><a class="footer__list-link" href="#">Purchase Theme</a></li>
                         </ul>
                     </nav>
                 </div>
@@ -419,12 +427,14 @@
                     </h4>
                     <nav>
                         <ul class="footer__list">
-                            <li class="footer__item"><a class="footer__item-link" href="#">Instagram profile</a></li>
-                            <li class="footer__item"><a class="footer__item-link" href="#">New Collection</a></li>
-                            <li class="footer__item"><a class="footer__item-link" href="#">Contact Us</a></li>
-                            <li class="footer__item"><a class="footer__item-link" href="#">Latest News</a></li>
-                            <li class="footer__item"><a class="footer__item-link" href="#">Terms & Conditions</a></li>
-                            <li class="footer__item"><a class="footer__item-link" href="#">Purchase Theme</a></li>
+                            <li class="footer__list-item"><a class="footer__list-link" href="#">Instagram profile</a>
+                            </li>
+                            <li class="footer__list-item"><a class="footer__list-link" href="#">New Collection</a></li>
+                            <li class="footer__list-item"><a class="footer__list-link" href="#">Contact Us</a></li>
+                            <li class="footer__list-item"><a class="footer__list-link" href="#">Latest News</a></li>
+                            <li class="footer__list-item"><a class="footer__list-link" href="#">Terms & Conditions</a>
+                            </li>
+                            <li class="footer__list-item"><a class="footer__list-link" href="#">Purchase Theme</a></li>
                         </ul>
                     </nav>
                 </div>
@@ -437,13 +447,17 @@
                         mockups.
                     </div>
                     <a class="footer__about-link" href="#">www.company.com</a>
-                    <div class="footer__social flex flex_space-between">
-                        <a href="#"><img class="footer__social-img" src="assets/icons/fb.svg" alt="facebook"></a>
-                        <a href="#"><img class="footer__social-img" src="assets/icons/instagram.svg"
-                                alt="instagram"></a>
-                        <a href="#"><img class="footer__social-img" src="assets/icons/in.svg" alt="in"></a>
-                        <a href="#"><img class="footer__social-img" src="assets/icons/twiter.svg" alt="twitter"></a>
-                        <a href="#"><img class="footer__social-img" src="assets/icons/ytube.svg" alt="youtube"></a>
+                    <div class="footer__socials flex flex_space-between">
+                        <div class="footer__social"><a href="#"><img class="footer__social-img"
+                                    src="assets/icons/fb.svg" alt="facebook"></a></div>
+                        <div class="footer__social"><a href="#"><img class="footer__social-img"
+                                    src="assets/icons/instagram.svg" alt="instagram"></a></div>
+                        <div class="footer__social"><a href="#"><img class="footer__social-img"
+                                    src="assets/icons/in.svg" alt="in"></a></div>
+                        <div class="footer__social"><a href="#"><img class="footer__social-img"
+                                    src="assets/icons/twiter.svg" alt="twitter"></a></div>
+                        <div class="footer__social"><a href="#"><img class="footer__social-img"
+                                    src="assets/icons/ytube.svg" alt="youtube"></a></div>
                     </div>
                     <div class="footer__language">
                         <a class="footer__language-link" href="#">English</a>

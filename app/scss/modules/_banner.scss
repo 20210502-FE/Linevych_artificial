@@ -45,13 +45,15 @@
         }
 
         @include respond-to(tablet-portrait) {
+            font-size: 40px;
+            line-height: 44px;
             max-width: 300px;
        }
     }
 
     &__text {
         max-width: 558px;
-        margin-bottom: 68px;
+        margin-bottom: 53px;
 
         @include respond-to(tablet-landscape) {
             max-width: 500px;
@@ -95,8 +97,8 @@
             }
         }
         
-        &-wrapper {
-            padding: 0 10px;
+        &-wrapper {     
+            padding: 15px 10px;
 
             
             @include respond-to(tablet-portrait) {
@@ -139,12 +141,13 @@
             margin: -10px;
         }
 
-        &-img {
-
+        &-wrapper {
+            
             @include respond-to(desktop) {
-            padding: 10px;
+                padding: 10px;
             }
         }
+
         &-first {
             max-width: 217px;
         }

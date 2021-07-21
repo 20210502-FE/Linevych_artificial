@@ -1,9 +1,7 @@
 .nav {
     
-
     &__btn {
         display: none;
-
 
         @media screen and (max-width: 990px) {
             display: block;
@@ -71,7 +69,7 @@
         padding: 0 20px;
 
         @media screen and (max-width: 990px) {
-            padding: 10px 40px;
+            padding: 10px 0;
         }
         
         @include respond-to(tablet-portrait) {
@@ -87,14 +85,14 @@
         line-height: 22px;
         color: $color-white;
         transition: all .5s;
-        
-        
 
+        @media screen and (max-width: 990px) {
+            padding: 0 40px;
+        }
+        
         &:hover {
             color: $color-blue;
         }
-        
-        
     }
 }
 

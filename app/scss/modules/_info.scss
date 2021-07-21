@@ -15,6 +15,7 @@
             justify-content: center;
         }
     }
+
     &__img {
         width: 725px;
 
@@ -58,6 +59,10 @@
     &__text {
         font-size: 16px;
         max-width: 460px;
-        margin-bottom: 65px;
+        margin-bottom: 50px;
     }
+
+    &__button {
+        padding: 15px 0;
+    } 
 }
