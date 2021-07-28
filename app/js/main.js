@@ -48,10 +48,23 @@ $('.slider').slick({
     ]
 });
 
+const navButton = document.getElementById('navBtn');
+const navList = document.getElementById('navList');
+const navLinetop = document.getElementById('navLinetop');
+const navLinecenter = document.getElementById('navLinecenter');
+const navLinebottom = document.getElementById('navLinebottom');
 
-$(function () {
+navButton.onclick = function () {
+    navList.classList.toggle('nav__list_active');
+    navLinetop.classList.toggle('nav__line-top_active');
+    navLinecenter.classList.toggle('nav__line-center_active');
+    navLinebottom.classList.toggle('nav__line-bottom_active');
+}
 
-    $('.nav__btn').on('click', function () {
-        $('.nav__list').toggleClass('nav__list--active')
-    });
-});
+
+// $(function () {
+
+//     $('.nav__btn').on('click', function () {
+//         $('.nav__list').toggleClass('nav__list--active')
+//     });
+// });
